@@ -67,13 +67,15 @@ main {
 .card .card-head span {
     color:var(--soft-violet-accent);
 }
+
 .img-desktop {
     width: 100%;
     height:auto;
     display: block;
     filter:opacity(0.4) drop-shadow(0 0 0 var(--soft-violet-accent));
-   
+    /* backdrop-filter: drop-shadow(0 0 0 var(--soft-violet-accent); */
     }
+
 
 .container-stat {
     display: flex;
@@ -161,17 +163,12 @@ main {
    }
    @media (max-width: 400px) {
     main {
-        margin: 25% 10% 25% 10%;
-    }
+        margin: 25% 10% 15% 10%;
+           }
   .card {
     grid-template-rows: repeat(3,1fr);
     grid-template-areas:    "image image"
-                            "info info" 
+                            "info info"
                             "info info";
     }
-  
-    .img-desktop {
-        display: none;
-    } 
-
-}
+ }
